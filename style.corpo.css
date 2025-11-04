@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, main {
+  margin: 0;
+  padding: 0;
+  background: #989595;
+  font-family: "Poppins", Arial;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+header {
+  background: url("Capa.png") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 1px;
+  animation: shine 5s linear infinite;
+}
+
+main#biografia {
+  background: #7d7d7d; 
+}
+
+main#aplicacoes {
+  background: #7d7d7d; 
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+  cursor: pointer;
+}
+
+section {
+  padding: 2rem;
+  margin: 1rem;
+  background: #fff;
+}
+
+.container {
+  max-width: 2000px;
+  margin: auto;
+  color: #000000;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: block;
+  gap: 1rem;
+}
+
+.card {
+
+  padding: 1rem;
+
+  margin-bottom: 1rem;
+
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.projetos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.projeto {
+  width: 250px;
+  text-align: center;
+}
+
+.projeto img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.skill {
+  padding: 1rem;
+  background: #ef8799;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  background: #93253d;
+}
+
+#contatos {
+  text-align: center;
+  padding: 2rem;
+  background: #fbc7d0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.cd-h-timeline {
+  position: relative;
+  padding: 3rem 1cm; 
+  height: 100vh;
+  width: 100%;
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+
+  margin: 0 auto;
+  max-width: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.cd-h-timeline__container {
+  position: relative;
+  height: 120px;
+  margin: 0 1cm;
+}
+
+.cd-h-timeline__dates {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 1cm;
+}
+
+.cd-h-timeline__line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 3px;
+  width: calc(100% - 2cm); 
+  background: #e6e4e4;
+  transform: translateY(-50%);
+  border-radius: 2px;
+  margin: 0 1cm;
+}
+
+.cd-h-timeline__filling-line {
+  position: absolute;
+  top: 50%;
+  left: 1cm;
+  height: 3px;
+  background: #000000;
+  transform: translateY(-50%);
+  transform-origin: left center;
+  transition: transform 0.4s ease;
+  width: 0%;
+  border-radius: 2px;
+}
+
+.cd-h-timeline__dates ol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  list-style: none;
+  height: 100%;
+  padding: 0;
+  margin: 0 1cm;
+}
+
+.cd-h-timeline__dates a {
+  position: relative;
+  display: block;
+  bottom: -45px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.cd-h-timeline__dates a::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  background: #e6e4e4;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cd-h-timeline__date--selected {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+.cd-h-timeline__date--selected::before {
+  background: #000000;
+  transform: translateX(-50%) scale(1.2);
+}
+
+.cd-h-timeline__events {
+  margin-top: 5rem;
+  margin-left: 1cm;
+  margin-right: 1cm;
+}
+
+.cd-h-timeline__event {
+  display: none;
+  padding: 1.5em;
+  background: #f9f9f9;
+  border-left: 4px solid #000000;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cd-h-timeline__event--selected {
+  display: block;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.cd-h-timeline__navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  padding: 0;
+}
+
+.cd-h-timeline__navigation a {
+  background: #000000;
+  color: #fff;
+  padding: 0.65em 1.6em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cd-h-timeline__navigation a:hover {
+  background: #040404;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .cd-h-timeline {
+    padding: 2rem 1rem;
+  }
+
+  .cd-h-timeline__dates ol {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    margin: 0;
+  }
+
+  .cd-h-timeline__dates a {
+    bottom: 0;
+    margin-bottom: 1em;
+  }
+
+  .cd-h-timeline__line,
+  .cd-h-timeline__filling-line {
+    display: none;
+  }
+
+  .cd-h-timeline__event {
+    padding: 1em;
+    margin: 0;
+  }
+
+  .cd-h-timeline__navigation {
+    margin: 1.5em 0 0 0;
+  }
+}
+
+/* ====== Seção de Biografia ====== */
+#biografia {
+  background: #f8f8f8;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+/* Grade fixa: 5 por linha */
+#biografia .cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+#biografia h1 {
+  margin-top: -30px; /* 🔹 sobe o título */
+}
+
+/* Cartão individual */
+#biografia .card {
+  position: relative;
+  margin-top: 30px;
+  width: 220px;
+  height: 260px;
+  background: #fff;
+  margin-bottom: -30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#biografia .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Imagens retangulares */
+#biografia .card img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-bottom: 3px solid #000;
+}
+
+/* Nome do cientista */
+#biografia .card h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Biografia oculta (overlay no hover) */
+#biografia .card::after {
+  content: attr(data-bio);
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 1rem;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.4;
+  transition: all 0.4s ease;
+}
+
+/* Efeito hover para mostrar a biografia */
+#biografia .card:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  #biografia .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #biografia .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #biografia .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ======= Características Físicas do Ultrassom ======= */
+#caracteristica {
+  width: 100%;
+  min-height: 100vh; /* ocupa toda a altura da tela */
+  background: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  padding: 4rem 8vw; /* espaçamento lateral proporcional à tela */
+  box-sizing: border-box;
+}
+
+/* Títulos principais e secundários */
+
+#caracteristica h3 {
+  color: #111;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+/* Texto */
+#caracteristica p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: #222;
+  font-size: 1rem;
+}
+
+/* Listas */
+#caracteristica ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#caracteristica li {
+  margin-bottom: 0.6rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Destaques */
+#caracteristica strong {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Fórmula */
+#caracteristica .formula {
+  background: #f2f2f2;
+  border-left: 5px solid #000;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-family: "Courier New", monospace;
+  text-align: center;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #caracteristica {
+    padding: 3rem 5vw;
+  }
+  #caracteristica h2 {
+    font-size: 1.5rem;
+  }
+  #caracteristica h3 {
+    font-size: 1.1rem;
+  }
+  #caracteristica p,
+  #caracteristica li {
+    font-size: 0.95rem;
+  }
+}
+/* ======= Estilo Geral ======= */
+
+
+
+#aplicacoes {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aplicacoes h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+/* ======= Cards ======= */
+.grid-aplicacoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #444;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #fff;
+  box-shadow: 0 0 25px rgba(255,255,255,0.2);
+}
+
+.card h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* ======= Caixa de Informação ======= */
+#info-box {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+#info-box.hidden {
+  display: none;
+}
+
+#info-box h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#info-box p {
+  max-width: 700px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+#close-btn {
+  position: absolute; /* importante: mantém o X no canto */
+  top: 2rem;          /* distância do topo */
+  right: 2rem;        /* distância da direita */
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  z-index: 2;         /* acima do overlay e do texto */
+  transition: 0.3s;
+}
+
+#close-btn:hover {
+  color: #ccc;
+}
+
+
+/* ======= Animação ======= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+#info-box {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease forwards;
+  color: #fff;
+}
+
+#info-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75); /* camada de transparência sobre a imagem */
+  z-index: 0;
+}
+
+#info-box h3, #info-box p, #close-btn {
+  position: relative;
+  z-index: 1; /* garante que o texto fique acima da imagem */
+}
+
+
+
+/* ======= Estilo Geral ======= */
+#simulacao {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#simulacao h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* ======= Grid ======= */
+.grid-simulacao {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* ======= Cards ======= */
+.card-simulacao {
+  position: relative;
+  display: block;
+  background: #111;
+  border: 1px solid #444;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.card-simulacao h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-simulacao p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* ======= Imagens de fundo nos cards ======= */
+.card-simulacao::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  z-index: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card-simulacao.bebe::before {
+  background-image: url("imagens/bebe-ultra.jpg");
+}
+
+.card-simulacao.morcego::before {
+  background-image: url("imagens/morcego-ultra.jpg");
+}
+
+/* ======= Hover efeito ======= */
+.card-simulacao:hover::before {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.card-simulacao:hover {
+  transform: scale(1.05);
+  border-color: #fff;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+}
+
+/* ======= Garante que o texto fique acima da imagem ======= */
+.card-simulacao h2,
+.card-simulacao p {
+  position: relative;
+  z-index: 1;
+}
+
+/* ======= Responsividade ======= */
+@media (max-width: 600px) {
+  #simulacao h1 {
+    font-size: 2rem;
+  }
+
+  .card-simulacao h2 {
+    font-size: 1.3rem;
+  }
+
+  .card-simulacao p {
+    font-size: 0.95rem;
+  }
+}
